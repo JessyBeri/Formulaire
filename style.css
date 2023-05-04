@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+    margin: 25px 0;
+    font-size: 2.5rem;
+}
+
+img {
+    width: 100%;
+    min-width: 400px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+.content {
+    width: 800px;
+    min-height: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: beige;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.image {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== FORMULAIRE ===== */
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding: 15px;
+}
+
+label {
+    margin: 20px 0 5px;
+}
+
+input,
+select {
+    height: 30px;
+    border: 1px solid rgb(219, 216, 216);
+}
+
+textarea {
+    border: 1px solid rgb(219, 216, 216);
+    min-height: 50px;
+    max-width: 400px;
+}
+
+.genre {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inputCivilite {
+    height: unset;
+}
+
+.labelCivilite {
+    margin-right: 20px;
+}
+
+.inputCgu {
+    height: unset;
+    margin: 10px 0;
+}
+
+.btnEnvoyer {
+    width: 100px;
+    margin: 20px auto 0px;
+    background: rgb(0, 0, 0);
+    color: white;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btnEnvoyer:hover {
+    background: white;
+    color: black;
+}
+
+/* ===== RESPONSIVE ====== */
+
+@media (max-width: 768px) {
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    .content {
+        margin: 0 15px;
+    }
+
+    img {
+        max-width: 300px;
+        width: 100%;
+        flex-basis: unset;
+    }
+    form {
+        width: 100%;
+        flex-basis: unset;
+        padding: 5%;
+    }
+}

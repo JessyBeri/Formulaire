@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulaire</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- titre -->
+        <header>
+            <h1>Contact</h1>
+        </header>
+
+        <!-- contenu -->
+        <section class="container">
+            <div class="content">
+                <!-- image -->
+                <div class="image">
+                    <img src="assets/images/contact_sm.jpg" alt="image" />
+                </div>
+                <!-- formulaire -->
+                <!-- <div class="formulaire"> -->
+                <form method="get" action="index.html">
+                    <div class="genre">
+                        <div>
+                            <input type="radio" name="civilite" id="mlle" class="inputCivilite" />
+                            <label for="mlle" class="labelCivilite">Mademoiselle</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="civilite" id="mme" class="inputCivilite" />
+                            <label for="mme" class="labelCivilite">Madame</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="civilite" id="mr" class="inputCivilite" />
+                            <label for="mr" class="labelCivilite">Monsieur</label>
+                        </div>
+                    </div>
+                    <label for="nom">Nom :</label>
+                    <input type="text" name="nom" id="nom" />
+
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" name="prenom" id="prenom" />
+
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email" />
+
+                    <label for="mdp">Mot de passe :</label>
+                    <input type="password" name="mdp" id="mdp" />
+
+                    <label for="question">Produit recherché :</label>
+                    <select name="question" id="question">
+                        <option value="compta">Site internet</option>
+                        <option value="bug">Application mobile</option>
+                        <option value="contact">Site et application</option>
+                    </select>
+
+                    <label for="infosup">Informations supplémentaires :</label>
+                    <textarea name="infosup" id="infosup">test</textarea>
+
+                    <div>
+                        <input type="checkbox" name="cgu" id="cgu" class="inputCgu" />
+                        <label for="cgu">Accepter les conditions d'utilisation</label>
+                    </div>
+
+                    <input type="submit" class="btnEnvoyer" />
+                </form>
+                <!-- </div> -->
+            </div>
+        </section>
+    </body>
+</html>
